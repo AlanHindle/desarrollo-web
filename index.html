@@ -8,7 +8,9 @@
     <title>HOME | WELP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <!-- BS5 CSS -->
     <link rel="stylesheet" href="css/bootstrap-5/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -49,119 +51,210 @@
     </header>
     <main>
         <section class="hero-home">
-            <h1>Sos el protagonista de tu historia.</h1>
-            <p>Welp es un crédito online que amplía tus posibilidades con soluciones simples, ágiles y al alcance de tu mano.</p>
-        </section>
-        <section class="section-pedilo-ahora">
-            <div class="contenido-pedilo-ahora-img">
-                <img src="" alt="">
+            <div class="container h-100">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-5 p-lg-5 my-5">
+                                <h1 class="fw-bold">
+                                    Sos el protagonista de tu historia.
+                                </h1>
+                                <p class="fw-normal"> <b>Welp</b> es un <b>crédito online</b> que amplía tus posibilidades con <b>soluciones</b> simples, ágiles y al alcance de tu mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contenido-pedilo-ahora-txt">
+        </section>
+
+        <section class="section-pedilo-ahora row gx-0">
+            <div class="contenido-pedilo-ahora-img col-12 col-lg-6">
+            </div>
+            <div class="contenido-pedilo-ahora-txt col-12 col-lg-6 p-5">
                 <h2>Créditos Personales</h2>
                 <p>100% online, con tasas y plazos a tu medida</p>
-                <a href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
+                <a class="btn-onboarding" href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
             </div>
         </section>
-        <section class="section-manifiesto">
-            <div class="contenido-manifiesto-txt">
+
+        <section class="section-manifiesto row gx-0">
+            <div class="contenido-manifiesto-txt col-12 col-lg-6 p-5">
                 <h2>Welp nace como el sueño de cambiar la forma en que pensamos nuestras finanzas personales</h2>
-                <a href="./pages/manifiesto.html"></a>
+
+                <a class="btn-onboarding" href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
             </div>
-            <div class="contenido-manifiesto-img">
-                <img src="" alt="">
+            <div class="contenido-manifiesto-img col-12 col-lg-6">
             </div>
         </section>
+
         <section class="hero-destino">
             <h2>Sos libre para <b>construir tu destino</b></h2>
         </section>
-        <section class="section-faqs">
-            <div class="contenido-faqs-img">
-                <img src="" alt="">
+        <section class="section-faqs row  gx-0">
+            <div class="contenido-faqs-img col-12 col-lg-6">
             </div>
-            <div class="contenido-faqs-txt">
-                <div class="faq-1">
-                    <img src="" alt="">
-                    <p class="pregunta">
-                        ¿Qué es Welp?
-                    </p>
-                    <p class="respuesta">
-                        <b>Welp</b> es una plataforma financiera innovadora que amplía tus posibilidades con soluciones simples y ágiles al alcance de tu mano. Hacemos que tu futuro dependa de ti y te alentamos para que seas el protagonista de tu historia.
-                        Queremos que construyas tu destino, que decidas, que exijas, que viajes, que elijas, que inviertas, que disfrutes, que vivas.
-                    </p>
+            <div class="contenido-faqs-txt col-12 col-lg-6 p-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p class="pregunta">
+                                    ¿Qué es Welp?
+                                </p>
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="respuesta">
+                                    <b>Welp</b> es una plataforma financiera innovadora que amplía tus posibilidades con soluciones simples y ágiles al alcance de tu mano. Hacemos que tu futuro dependa de ti y te alentamos para que seas el protagonista
+                                    de tu historia. Queremos que construyas tu destino, que decidas, que exijas, que viajes, que elijas, que inviertas, que disfrutes, que vivas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <p class="pregunta">
+                                    ¿Tienen sucursales de atención al público?
+                                </p>
+                        </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="respuesta">
+                                    Welp opera 100% online, con alcance en todo el país. Además, contamos con un equipo de atención al cliente listo para responder cualquier consulta, nuestro horario de atención es: Lunes a viernes de 8 a 21 hs – Sábados y feriados de 9 a 13 hs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <p class="pregunta">
+                                   Ya tengo un crédito, ¿puedo conseguir otro?
+                                </p>
+                        </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="respuesta">
+                                    En <b>Welp</b> reconocemos a los clientes con buen comportamiento de pago, así que si pagaste tu crédito en tiempo y forma y además, terminaste de pagar el crédito que tenés activo, podés solicitar un nuevo crédito.
+                                    Para hacerlo, volvé a completar el formulario de nuestro sitio web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <p class="pregunta">
+                                   ¿Cuáles son los beneficios?
+                                </p>
+                        </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="respuesta">
+                                    <ul>
+                                        <li>
+                                            La agilidad que obtenés al acceder a un formulario online y de respuesta automática para la solicitud de tu crédito.
+                                        </li>
+                                        <li>
+                                            La transparencia hacia nuestros usuarios.
+                                        </li>
+                                        <li>
+                                            Contamos con asesores de atención al cliente que están preparados para resolver todas las dudas y consultas que tengas.
+                                        </li>
+                                        <li>
+                                            El índice de responsabilidad crediticia en <b>Welp</b>: reconocemos a los clientes cumplidores con mejores condiciones y mayores beneficios.
+                                        </li>
+                                        <li>
+                                            Contamos con tecnología propia, que desarrollamos para calcular el riesgo crediticio y ofrecer una oferta personalizada a cada cliente.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="./pages/preguntas-frecuentes.html">Ver todas las preguntas</a>
+                <div class="row mt-5 text-center">
+                    <div class="col-12">
+                        <a href="./pages/preguntas-frecuentes.html" class="btn btn-primary p-3 rounded-3">Ver todas las preguntas</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-widget-marca">
-            <img src="./assets/img/png/marca-horizontal.png" alt="">
-            <p>Somos una plataforma financiera innovadora que amplía tus posibilidades con soluciones simples, ágiles y al alcance de tu mano. Más posibilidades para hacer más y para ser más.</p>
+    <footer class="row gx-0 p-5">
+        <div class="footer-widget-marca col-12 col-md-3 ">
+            <img src="./assets/img/png/marca-horizontal.png" alt="Welp Logo" class="img-fluid" width="250px">
+            <p class="mt-3">Somos una plataforma financiera innovadora que amplía tus posibilidades con soluciones simples, ágiles y al alcance de tu mano. Más posibilidades para hacer más y para ser más.</p>
             <div class="social-media">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="" alt="" class="img-fluid">
+                <img src="" alt="" class="img-fluid">
             </div>
         </div>
-        <div class="footer-widget-pages">
+        <div class="footer-widget-pages col-12 col-md-3">
             <ul>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/creditos.html">Productos</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/manifiesto.html">Manifiesto</a>
                 </li>
-                <li>
-                    <img src="" alt="">
+                <li><img src="" alt="" class="img-fluid">
+
                     <a href="./pages/blog.html">Blog</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/contacto.html">Atención a usuarios</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./assets/pdf/presskit-welp.pdf">Press Kit</a>
                 </li>
             </ul>
         </div>
-        <div class="footer-widget-legales">
+        <div class="footer-widget-legales col-12 col-md-3">
             <ul>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/terminos-y-condiciones.html">Términos y condiciones</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/defensa-consumidor.html">Defensa al consumidor</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/ley-24240-modelo-contrato.html">Ley 24.240 | Modelo de contratos</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/informacion-al-usuario-financiero.html">Información al usuario financiero</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/politicas/politica-de-cookies.html">Política de cookies</a>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="./pages/legales/politicas/politica-de-privacidad.html">Política de privacidad</a>
                 </li>
             </ul>
         </div>
-        <div class="footer-widget-extra">
+        <div class="footer-widget-extra col-12 col-md-3">
             <ul>
                 <li>
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                     <a href="https://regret.wenance.com/?company=WENANCE_AR">Botón de arrepentimiento</a>
                 </li>
                 <li>
@@ -171,27 +264,25 @@
             </ul>
             <div class="footer-widget-extra-img">
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="" alt="" class="img-fluid">
                 </a>
             </div>
         </div>
-
-
     </footer>
 
     <!-- BS5 JS -->
