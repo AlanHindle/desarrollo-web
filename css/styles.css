@@ -390,6 +390,10 @@ footer {
 
 /** FOOTER **/
 
+footer p {
+    font-size: 1.4rem;
+}
+
 footer ul {
     list-style: none;
 }
