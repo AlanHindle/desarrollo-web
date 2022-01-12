@@ -59,6 +59,10 @@ i {
     background-color: #007aff;
 }
 
+.txt-welp {
+    color: #007aff;
+}
+
 a.btn-onboarding {
     background-color: #007aff !important;
     padding: 20px !important;
@@ -175,7 +179,6 @@ footer {
 /** TAMAÑOS DE LAS IMÁGENES **/
 
 .hero-home,
-.section-hero-preguntas-frecuentes,
 .contenido-pedilo-ahora-img,
 .contenido-manifiesto-img {
     background-color: #007aff;
@@ -336,13 +339,30 @@ footer {
 }
 
 
-/** PREGUNTAS FRECUENTES + BLOG**/
+/** NUESTRO MANIFIESTO **/
+
+.contenido-nuestro-manifiesto-txt h2 {
+    color: #007aff;
+    margin-bottom: 20px;
+}
+
+.contenido-nuestro-manifiesto-txt p {
+    margin-top: 20px;
+    color: #6c757d;
+    font-size: 2.0rem;
+}
+
+
+/** PREGUNTAS FRECUENTES + BLOG + NUESTRO MANIFIESTO**/
 
 .section-hero-preguntas-frecuentes,
+.section-hero-nuestro-manifiesto,
 .section-hero-blog {
-    background-color: #007aff;
     color: #ffffff;
-    height: 400px;
+    background-color: #007aff;
+    background-position: top center;
+    background-size: cover;
+    height: 200px;
 }
 
 .section-hero-preguntas-frecuentes h1,
