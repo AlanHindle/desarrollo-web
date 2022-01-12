@@ -19,35 +19,41 @@
 
 <body>
     <header>
-        <nav>
-            <img src="./assets/img/png/marca-color-horizontal.png" alt="">
-            <ul>
-                <li>
-                    <a href="#">
-
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">Inicio</a></li>
-                <li>
-                    <a href="pages/creditos.html">Créditos</a>
-                </li>
-                <li>
-                    <a href="pages/manifiesto.html">Manifiesto</a>
-                </li>
-                <li>
-                    <a href="pages/preguntas-frecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li>
-                    <a href="pages/blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp" class="btn-onboarding">Pedilo ahora</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+            <div class="container">
+                <a href="/" class="navbar-brand d-flex w-50 me-auto">
+                    <img src="./assets/img/png/marca-color-horizontal.png" alt="" class="img-fluid" width="250px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a href="index.html">Inicio</a></li>
+                        <li class="nav-item">
+                            <a href="pages/creditos.html">Créditos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/manifiesto.html">Manifiesto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/preguntas-frecuentes.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp" class="nav-link btn-onboarding">Pedilo ahora</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -82,7 +88,7 @@
             <div class="contenido-manifiesto-txt col-12 col-lg-6 p-5">
                 <h2>Welp nace como el sueño de cambiar la forma en que pensamos nuestras finanzas personales</h2>
 
-                <a class="btn-onboarding" href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
+                <a class="btn-onboarding-white" href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
             </div>
             <div class="contenido-manifiesto-img col-12 col-lg-6">
             </div>
@@ -91,7 +97,7 @@
         <section class="hero-destino">
             <h2>Sos libre para <b>construir tu destino</b></h2>
         </section>
-        <section class="section-faqs row  gx-0">
+        <section class="section-faqs row gx-0">
             <div class="contenido-faqs-img col-12 col-lg-6">
             </div>
             <div class="contenido-faqs-txt col-12 col-lg-6 p-5">
@@ -99,9 +105,9 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <p class="pregunta">
+                                <h3 class="pregunta">
                                     ¿Qué es Welp?
-                                </p>
+                                </h3>
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -116,9 +122,9 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <p class="pregunta">
+                                <h3 class="pregunta">
                                     ¿Tienen sucursales de atención al público?
-                                </p>
+                                </h3>
                         </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -132,9 +138,9 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <p class="pregunta">
+                                <h3 class="pregunta">
                                    Ya tengo un crédito, ¿puedo conseguir otro?
-                                </p>
+                                </h3>
                         </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -149,9 +155,9 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <p class="pregunta">
+                                <h3 class="pregunta">
                                    ¿Cuáles son los beneficios?
-                                </p>
+                                </h3>
                         </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -181,7 +187,7 @@
                 </div>
                 <div class="row mt-5 text-center">
                     <div class="col-12">
-                        <a href="./pages/preguntas-frecuentes.html" class="btn btn-primary p-3 rounded-3">Ver todas las preguntas</a>
+                        <a href="./pages/preguntas-frecuentes.html" class="btn btn-onboarding p-3 rounded-3">Ver todas las preguntas</a>
                     </div>
                 </div>
             </div>
@@ -190,18 +196,19 @@
     <footer>
         <div class="container">
             <div class="row gx-0 p-5">
-
-
-
                 <div class="footer-widget-marca col-12 col-md-4 ">
                     <img src="./assets/img/png/marca-horizontal.png" alt="Welp Logo" class="img-fluid" width="250px">
                     <p class="mt-3">Somos una plataforma financiera innovadora que amplía tus posibilidades con soluciones simples, ágiles y al alcance de tu mano. Más posibilidades para hacer más y para ser más.</p>
                     <div class="social-media row">
                         <div class="col-1">
-                            <i class="bi bi-facebook"></i>
+                            <a href="https://www.facebook.com/welp.com.ar">
+                                <i class="bi bi-facebook"></i>
+                            </a>
                         </div>
                         <div class="col-1">
-                            <i class="bi bi-instagram"></i>
+                            <a href="https://www.instagram.com/welp/">
+                                <i class="bi bi-instagram"></i>
+                            </a>
                         </div>
 
                         <img src="" alt="" class="img-fluid">

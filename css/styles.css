@@ -60,17 +60,39 @@ i {
 }
 
 a.btn-onboarding {
-    background-color: #007aff;
-    padding: 20px;
-    border-radius: 10px;
-    color: #ffffff;
+    background-color: #007aff !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    border: 2px solid #007aff;
+    color: #ffffff !important;
+    background: #007aff !important;
+    transition: all 300ms ease-in-out !important;
+}
+
+a.btn-onboarding:hover {
+    background-color: #ffffff !important;
+    border: 2px solid #007aff;
+    color: #007aff !important;
+    background: #ffffff !important;
+    transition: all 300ms ease-in-out !important;
 }
 
 a.btn-onboarding-white {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    color: #007aff;
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+    border: 2px solid #007aff;
+    color: #007aff !important;
+    background: #ffffff !important;
+    transition: all 300ms ease-in-out !important;
+}
+
+a.btn-onboarding-white:hover {
+    background-color: #007aff !important;
+    border: 2px solid #007aff;
+    color: #ffffff !important;
+    background: #007aff !important;
+    transition: all 300ms ease-in-out !important;
 }
 
 
@@ -112,12 +134,25 @@ nav ul {
 }
 
 nav ul li {
-    padding: 20px;
+    padding: 10px 20px;
     font-size: 1.6rem;
+    font-weight: 500;
 }
 
 nav ul li a {
     color: black;
+    background-image: linear-gradient(#007aff, #007aff);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    padding-bottom: 10px;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-size: 100% 2px;
+    color: #007aff;
 }
 
 footer {
@@ -140,6 +175,7 @@ footer {
 /** TAMAÑOS DE LAS IMÁGENES **/
 
 .hero-home,
+.section-hero-preguntas-frecuentes,
 .contenido-pedilo-ahora-img,
 .contenido-manifiesto-img {
     background-color: #007aff;
@@ -278,9 +314,9 @@ footer {
 }
 
 .pregunta {
-    font-size: 2rem;
-    font-weight: bold;
-    padding-top: 5px;
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    padding-top: 5px !important;
 }
 
 .contenido-faqs-txt a.btn-ver-preguntas-frecuentes {
@@ -398,13 +434,15 @@ footer ul {
     list-style: none;
 }
 
-footer ul li a {
+footer ul li a,
+footer .social-media a i {
     background-color: #007aff;
     color: #ffffff;
     transition: all 300ms ease-in-out;
 }
 
-footer ul li a:hover {
+footer ul li a:hover,
+footer .social-media a:hover i {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
     transition: all 300ms ease-in-out;
