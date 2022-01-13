@@ -180,7 +180,8 @@ footer {
 
 .hero-home,
 .contenido-pedilo-ahora-img,
-.contenido-manifiesto-img {
+.contenido-manifiesto-img,
+.contenido-contacto-img {
     background-color: #007aff;
     background-position: top center;
     background-size: cover;
@@ -189,7 +190,8 @@ footer {
 
 .section-pedilo-ahora,
 .section-manifiesto,
-.section-faqs {
+.section-faqs,
+.section-contacto {
     align-items: center;
 }
 
@@ -199,6 +201,14 @@ footer {
 
 .contenido-manifiesto-img {
     background-image: url("../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-manifiesto-img {
+    background-image: url("../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-contacto-img {
+    background-image: url("../assets/img/png/contacto/1-contacto-persona.jpg");
 }
 
 .contenido-manifiesto-txt h2 {
@@ -421,25 +431,27 @@ footer {
 
 /** CONTACTO **/
 
-.contenido-contacto {
+.contenido-contacto-txt {
     color: #000000;
 }
 
-.contenido-contacto h1 {
+.contenido-contacto-txt h1 {
     font-size: 4rem;
 }
 
-.contenido-contacto h3 {
+.contenido-contacto-txt h3 {
     font-size: 1.8rem;
 }
 
-.contenido-contacto p,
-.contenido-contacto ul li {
-    font-size: 1.5rem;
+.contenido-contacto-txt p,
+.contenido-contacto-txt ul li,
+.contenido-contacto-txt a {
+    font-size: 1.7rem !important;
 }
 
-.contenido-contacto ul {
+.contenido-contacto-txt ul {
     list-style: none;
+    padding-left: 0rem !important;
     margin-bottom: 20px;
 }
 
