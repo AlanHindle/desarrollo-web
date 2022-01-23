@@ -1,0 +1,31 @@
+/** HOME | CREDITOS PERSONALES **/
+
+.contenido-pedilo-ahora-txt h2 {
+    color: $primarycolor;
+}
+
+.contenido-pedilo-ahora-txt p,
+.section-manifiesto-txt p {
+    margin-bottom: 30px;
+}
+
+.contenido-pedilo-ahora-txt a {
+    font-size: 1.8rem;
+}
+
+
+/** HOME | MANIFIESTO **/
+
+.section-manifiesto {
+    background-color: $primarycolor;
+    color: $white;
+    text-align: right;
+}
+
+.section-manifiesto a {
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    color: $primarycolor;
+    font-size: 1.8rem;
+}

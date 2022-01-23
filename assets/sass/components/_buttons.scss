@@ -1,0 +1,38 @@
+/** QUITO TODO EL SUBRRAYADO A LOS A **/
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem !important;
+    .btn-onboarding {
+        background-color: $primarycolor !important;
+        padding: 20px !important;
+        border-radius: 10px !important;
+        border: 2px solid $primarycolor;
+        color: $white !important;
+        background: $primarycolor !important;
+        transition: all 300ms ease-in-out !important;
+        & :hover {
+            background-color: $white !important;
+            border: 2px solid $primarycolor;
+            color: $primarycolor !important;
+            background: $white !important;
+            transition: all 300ms ease-in-out !important;
+        }
+    }
+    .btn-onboarding-white {
+        background-color: $white !important;
+        padding: 20px !important;
+        border-radius: 10px !important;
+        border: 2px solid $primarycolor;
+        color: $primarycolor !important;
+        background: $white !important;
+        transition: all 300ms ease-in-out !important;
+        &:hover {
+            background-color: $primarycolor !important;
+            border: 2px solid $primarycolor;
+            color: $white !important;
+            background: $primarycolor !important;
+            transition: all 300ms ease-in-out !important;
+        }
+    }
+}

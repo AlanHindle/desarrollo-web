@@ -1,0 +1,23 @@
+/** BLOG **/
+
+.contenido-blog-nota {
+    margin: 20px;
+}
+
+
+/** BLOG | ENTRADAS RECIENTES **/
+
+.entradas-recientes {
+    display: block;
+    border-radius: 10px;
+    color: $grey;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    text-align: left;
+    margin: 10px 0px;
+    font-size: 1.5rem;
+    &:hover {
+        background-color: $primarycolor;
+        color: $white;
+    }
+}

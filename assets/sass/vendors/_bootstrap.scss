@@ -1,0 +1,14 @@
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+    background-color: $white !important;
+    color: $primarycolor;
+    border-radius: 20px;
+}
+
+.accordion-item {
+    border: none
+}

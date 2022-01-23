@@ -1,0 +1,18 @@
+.contenido-manifiesto-txt h2 {
+    margin-bottom: 40px;
+}
+
+
+/** NUESTRO MANIFIESTO **/
+
+.contenido-nuestro-manifiesto-txt {
+    h2 {
+        color: $primarycolor;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-top: 20px;
+        color: $grey;
+        font-size: 2.0rem;
+    }
+}

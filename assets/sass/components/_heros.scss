@@ -1,0 +1,62 @@
+/** HOME **/
+
+.hero-home {
+    background-image: url("../../../assets/img/png/home/hero-home.png");
+    background-position: center center;
+    background-size: cover;
+    color: $white;
+}
+
+
+/** HOME | LIBERTAD **/
+
+.hero-destino {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    background-image: url("../../../assets/img/png/home/ser-libre.png");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    h2 {
+        background-color: $primarycolor;
+        color: $white;
+        padding: 15px;
+        margin: 40px;
+        font-weight: normal !important;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0.8;
+        transition: all 300ms ease-in-out;
+        transform: scale(1);
+        &:hover {
+            transition: all 300ms ease-in-out;
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+/** PREGUNTAS FRECUENTES + BLOG + NUESTRO MANIFIESTO**/
+
+.section-hero-preguntas-frecuentes,
+.section-hero-nuestro-manifiesto,
+.section-hero-blog {
+    color: $white;
+    background-color: $primarycolor;
+    background-position: top center;
+    background-size: cover;
+    height: 200px;
+}
+
+.section-hero-preguntas-frecuentes h1,
+.section-hero-blog h1 {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 20px 0px;
+}

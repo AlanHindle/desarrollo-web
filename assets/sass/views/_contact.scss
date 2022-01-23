@@ -1,0 +1,21 @@
+/** CONTACTO **/
+
+.contenido-contacto-txt {
+    color: $black;
+    h1 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    p,
+    ul li,
+    a {
+        font-size: 1.7rem !important;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0rem !important;
+        margin-bottom: 20px;
+    }
+}

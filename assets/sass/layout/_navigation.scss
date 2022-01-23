@@ -1,0 +1,45 @@
+/** HEADER GENERAL **/
+
+header {
+    display: flex;
+    font-size: 2.0rem;
+}
+
+
+/** BARRA DE NAVEGACIÓN GENERAL **/
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    img {
+        width: 200px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        li {
+            padding: 10px 20px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            a {
+                color: black;
+                background-image: linear-gradient($primarycolor, $primarycolor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                padding-bottom: 10px;
+                &:hover,
+                &:focus {
+                    background-size: 100% 2px;
+                    color: $primarycolor;
+                }
+            }
+        }
+    }
+}

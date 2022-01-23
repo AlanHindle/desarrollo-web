@@ -1,0 +1,56 @@
+/** HOME | PREGUNTAS FRECUENTES **/
+
+.contenido-faqs-img {
+    background-image: url("../assets/img/png/home/preguntas-frecuentes.png");
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    img {
+        opacity: 0;
+    }
+}
+
+.contenido-faqs-txt {
+    margin: 40px 0px;
+    img {
+        width: 25px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    a.btn-ver-preguntas-frecuentes {
+        background-color: $primarycolor;
+        padding: 20px;
+        border-radius: 10px;
+        color: $white;
+        font-size: 1.8rem;
+        display: flex;
+    }
+}
+
+.pregunta {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    padding-top: 5px !important;
+}
+
+.section-faqs h3 {
+    font-weight: normal;
+}
+
+.pregunta-1,
+.pregunta-2 {
+    color: $primarycolor;
+    font-size: 2rem;
+}
+
+.respuesta-1,
+.respuesta-2 {
+    color: $grey-white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}

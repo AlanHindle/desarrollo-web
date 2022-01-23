@@ -1,0 +1,34 @@
+/** TAMAÑOS DE LAS IMÁGENES **/
+
+.hero-home,
+.contenido-pedilo-ahora-img,
+.contenido-manifiesto-img,
+.contenido-contacto-img {
+    background-color: $primarycolor;
+    background-position: top center;
+    background-size: cover;
+    height: 600px;
+}
+
+.section-pedilo-ahora,
+.section-manifiesto,
+.section-faqs,
+.section-contacto {
+    align-items: center;
+}
+
+.contenido-pedilo-ahora-img {
+    background-image: url("../../../assets/img/png/home/creditos-personales.png");
+}
+
+.contenido-manifiesto-img {
+    background-image: url("../../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-manifiesto-img {
+    background-image: url("../../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-contacto-img {
+    background-image: url("../../../assets/img/png/contacto/1-contacto-persona.jpg");
+}
