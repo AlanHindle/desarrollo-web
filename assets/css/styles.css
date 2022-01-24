@@ -1,17 +1,485 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "components/hero";
- *   |         ^^^^^^^^^^^^^^^^^
- *   '
- *   styles.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"components/hero\";\d\a   \2502          ^^^^^^^^^^^^^^^^^\a   \2575 \a   styles.scss 5:9  root stylesheet";
+@charset "UTF-8";
+/** COLORES GENERALES **/
+.bg-welp {
+  background-color: #007aff;
 }
+
+.txt-welp {
+  color: #007aff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+p,
+pre,
+code,
+kbd,
+samp,
+input,
+button,
+select,
+optgroup,
+textarea {
+  font-family: "Rubik", sans-serif !important;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p,
+ul,
+li {
+  font-size: 1.7rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+/** QUITO TODO EL SUBRRAYADO A LOS A **/
+a {
+  text-decoration: none;
+  font-size: 1.3rem !important;
+}
+a .btn-onboarding {
+  background-color: #007aff !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #007aff;
+  color: #ffffff !important;
+  background: #007aff !important;
+  transition: all 300ms ease-in-out !important;
+}
+a .btn-onboarding :hover {
+  background-color: #ffffff !important;
+  border: 2px solid #007aff;
+  color: #007aff !important;
+  background: #ffffff !important;
+  transition: all 300ms ease-in-out !important;
+}
+a .btn-onboarding-white {
+  background-color: #ffffff !important;
+  padding: 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #007aff;
+  color: #007aff !important;
+  background: #ffffff !important;
+  transition: all 300ms ease-in-out !important;
+}
+a .btn-onboarding-white:hover {
+  background-color: #007aff !important;
+  border: 2px solid #007aff;
+  color: #ffffff !important;
+  background: #007aff !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+/** HOME **/
+.hero-home {
+  background-image: url("../../../assets/img/png/home/hero-home.png");
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/** HOME | LIBERTAD **/
+.hero-destino {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  background-image: url("../../../assets/img/png/home/ser-libre.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-destino h2 {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 15px;
+  margin: 40px;
+  font-weight: normal !important;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.8;
+  transition: all 300ms ease-in-out;
+  transform: scale(1);
+}
+.hero-destino h2:hover {
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/** PREGUNTAS FRECUENTES + BLOG + NUESTRO MANIFIESTO**/
+.section-hero-preguntas-frecuentes,
+.section-hero-nuestro-manifiesto,
+.section-hero-blog {
+  color: #ffffff;
+  background-color: #007aff;
+  background-position: top center;
+  background-size: cover;
+  height: 200px;
+}
+
+.section-hero-preguntas-frecuentes h1,
+.section-hero-blog h1 {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding: 20px 0px;
+}
+
+/** TAMAÑOS DE LAS IMÁGENES **/
+.hero-home,
+.contenido-pedilo-ahora-img,
+.contenido-manifiesto-img,
+.contenido-contacto-img {
+  background-color: #007aff;
+  background-position: top center;
+  background-size: cover;
+  height: 600px;
+}
+
+.section-pedilo-ahora,
+.section-manifiesto,
+.section-faqs,
+.section-contacto {
+  align-items: center;
+}
+
+.contenido-pedilo-ahora-img {
+  background-image: url("../../../assets/img/png/home/creditos-personales.png");
+}
+
+.contenido-manifiesto-img {
+  background-image: url("../../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-manifiesto-img {
+  background-image: url("../../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-contacto-img {
+  background-image: url("../../../assets/img/png/contacto/1-contacto-persona.jpg");
+}
+
+/** HEADER GENERAL **/
+header {
+  display: flex;
+  font-size: 2rem;
+}
+
+/** BARRA DE NAVEGACIÓN GENERAL **/
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav img {
+  width: 200px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul li {
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+nav ul li a {
+  color: black;
+  background-image: linear-gradient(#007aff, #007aff);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  padding-bottom: 10px;
+}
+nav ul li a:hover, nav ul li a:focus {
+  background-size: 100% 2px;
+  color: #007aff;
+}
+
+/** FOOTER **/
+footer {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 40px 0px;
+}
+footer p {
+  font-size: 1.4rem;
+}
+footer ul {
+  list-style: none;
+  padding: none !important;
+}
+footer ul li {
+  padding: none !important;
+}
+footer ul li a,
+footer .social-media a i {
+  color: #ffffff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+footer ul li a:hover,
+footer .social-media a i:hover {
+  color: #ffffff;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+/** HOME | CREDITOS PERSONALES **/
+.contenido-pedilo-ahora-txt h2 {
+  color: #007aff;
+}
+
+.contenido-pedilo-ahora-txt p,
+.section-manifiesto-txt p {
+  margin-bottom: 30px;
+}
+
+.contenido-pedilo-ahora-txt a {
+  font-size: 1.8rem;
+}
+
+/** HOME | MANIFIESTO **/
+.section-manifiesto {
+  background-color: #007aff;
+  color: #ffffff;
+  text-align: right;
+}
+
+.section-manifiesto a {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #007aff;
+  font-size: 1.8rem;
+}
+
+/** CREDITOS **/
+.section-creditos-rapidos {
+  color: #ffffff;
+}
+
+.contenido-manifiesto-txt h2 {
+  margin-bottom: 40px;
+}
+
+/** NUESTRO MANIFIESTO **/
+.contenido-nuestro-manifiesto-txt h2 {
+  color: #007aff;
+  margin-bottom: 20px;
+}
+.contenido-nuestro-manifiesto-txt p {
+  margin-top: 20px;
+  color: #6c757d;
+  font-size: 2rem;
+}
+
+/** HOME | PREGUNTAS FRECUENTES **/
+.contenido-faqs-img {
+  background-image: url("../../../assets/img/png/home/preguntas-frecuentes.png");
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.contenido-faqs-img img {
+  opacity: 0;
+}
+
+.contenido-faqs-txt {
+  margin: 40px 0px;
+}
+.contenido-faqs-txt img {
+  width: 25px;
+  margin-right: 10px;
+}
+.contenido-faqs-txt h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contenido-faqs-txt a.btn-ver-preguntas-frecuentes {
+  background-color: #007aff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.pregunta {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  padding-top: 5px !important;
+}
+
+.section-faqs h3 {
+  font-weight: normal;
+}
+
+.pregunta-1,
+.pregunta-2 {
+  color: #007aff;
+  font-size: 2rem;
+}
+
+.respuesta-1,
+.respuesta-2 {
+  color: #999999;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/** BLOG **/
+.contenido-blog-nota {
+  margin: 20px;
+  padding: 20px;
+  padding-right: 50px;
+}
+.contenido-blog-nota img {
+  border-radius: 10px;
+}
+.contenido-blog-nota .blog-categoria,
+.contenido-blog-nota .blog-leer-mas {
+  margin-top: 15px;
+}
+.contenido-blog-nota .blog-categoria a,
+.contenido-blog-nota .blog-leer-mas a {
+  color: #007aff;
+  font-size: 1.2rem !important;
+  background-color: rgba(0, 123, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+.contenido-blog-nota .blog-categoria a:hover,
+.contenido-blog-nota .blog-leer-mas a:hover {
+  color: #ffffff;
+  background-color: #007aff;
+  transition: all 300ms ease-in-out;
+}
+.contenido-blog-nota .blog-titulo {
+  margin: 15px 0px;
+}
+.contenido-blog-nota .blog-texto {
+  color: #6c757d;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.contenido-blog-nota .blog-footer {
+  color: #999999;
+}
+.contenido-blog-nota .blog-footer p,
+.contenido-blog-nota .blog-footer a {
+  font-size: 1.2rem !important;
+}
+.contenido-blog-nota .blog-footer .blog-leer-mas {
+  text-align: right;
+  padding-right: 15px;
+}
+
+/** BLOG | ENTRADAS RECIENTES **/
+aside h1 {
+  font-size: 2.5rem !important;
+}
+aside .entradas-recientes {
+  display: block;
+  border-radius: 10px;
+  color: #6c757d;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 20px;
+  text-align: left;
+  margin: 10px 0px;
+  font-size: 1.5rem;
+  transition: all 300ms ease-in-out;
+}
+aside .entradas-recientes:hover {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(92, 112, 152, 0);
+  transition: all 300ms ease-in-out;
+}
+aside .entradas-recientes h2 {
+  font-size: 1.8rem;
+}
+aside .entradas-recientes p {
+  font-size: 1.4rem;
+}
+
+/** CONTACTO **/
+.contenido-contacto-txt {
+  color: #000000;
+}
+.contenido-contacto-txt h1 {
+  font-size: 4rem;
+}
+.contenido-contacto-txt h3 {
+  font-size: 1.8rem;
+}
+.contenido-contacto-txt p,
+.contenido-contacto-txt ul li,
+.contenido-contacto-txt a {
+  font-size: 1.7rem !important;
+}
+.contenido-contacto-txt ul {
+  list-style: none;
+  padding-left: 0rem !important;
+  margin-bottom: 20px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+  background-color: #ffffff !important;
+  color: #007aff;
+  border-radius: 20px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

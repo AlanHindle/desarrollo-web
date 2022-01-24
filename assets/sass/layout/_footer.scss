@@ -14,23 +14,20 @@ footer {
             padding: none !important;
         }
     }
-}
-
-footer ul footer ul li a,
-footer .social-media a i {
-    color: $white;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-footer ul li a:hover,
-footer .social-media a:hover i {
-    color: $white;
-    font-weight: 700;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
+    ul li a,
+    .social-media a i {
+        color: $white;
+        -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+        &:hover {
+            color: $white;
+            font-weight: 700;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+        }
+    }
 }

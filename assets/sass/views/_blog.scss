@@ -2,22 +2,78 @@
 
 .contenido-blog-nota {
     margin: 20px;
+    padding: 20px;
+    padding-right: 50px;
+    img {
+        border-radius: 10px;
+    }
+    .blog-categoria,
+    .blog-leer-mas {
+        margin-top: 15px;
+        a {
+            color: $primarycolor;
+            font-size: 1.2rem !important;
+            background-color: $primarycolor-20;
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: all 300ms ease-in-out;
+            &:hover {
+                color: $white;
+                background-color: $primarycolor;
+                transition: all 300ms ease-in-out;
+            }
+        }
+    }
+    .blog-titulo {
+        margin: 15px 0px;
+    }
+    .blog-texto {
+        color: $grey;
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .blog-footer {
+        color: $grey-white;
+        p,
+        a {
+            font-size: 1.2rem !important;
+        }
+        .blog-leer-mas {
+            text-align: right;
+            padding-right: 15px;
+        }
+    }
 }
 
 
 /** BLOG | ENTRADAS RECIENTES **/
 
-.entradas-recientes {
-    display: block;
-    border-radius: 10px;
-    color: $grey;
-    background-color: rgba(0, 0, 0, 0.02);
-    padding: 20px;
-    text-align: left;
-    margin: 10px 0px;
-    font-size: 1.5rem;
-    &:hover {
-        background-color: $primarycolor;
-        color: $white;
+aside {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+    .entradas-recientes {
+        display: block;
+        border-radius: 10px;
+        color: $grey;
+        background-color: rgba(0, 0, 0, 0.02);
+        padding: 20px;
+        text-align: left;
+        margin: 10px 0px;
+        font-size: 1.5rem;
+        transition: all 300ms ease-in-out;
+        &:hover {
+            background-color: $primarycolor-80;
+            color: $white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgb(92 112 152 / 0%);
+            transition: all 300ms ease-in-out;
+        }
+        h2 {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
     }
 }
