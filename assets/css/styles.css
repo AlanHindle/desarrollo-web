@@ -59,41 +59,41 @@ i {
 }
 
 /** QUITO TODO EL SUBRRAYADO A LOS A **/
+.btn-primary, a .btn-onboarding-white, a .btn-onboarding {
+  padding: 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #007aff;
+  transition: all 300ms ease-in-out !important;
+}
+
+.btn-primary-hover, a .btn-onboarding-white:hover, a .btn-onboarding :hover {
+  border: 2px solid #007aff;
+  transition: all 300ms ease-in-out !important;
+}
+
 a {
   text-decoration: none;
   font-size: 1.3rem !important;
 }
 a .btn-onboarding {
   background-color: #007aff !important;
-  padding: 20px !important;
-  border-radius: 10px !important;
-  border: 2px solid #007aff;
   color: #ffffff !important;
   background: #007aff !important;
-  transition: all 300ms ease-in-out !important;
 }
 a .btn-onboarding :hover {
   background-color: #ffffff !important;
-  border: 2px solid #007aff;
   color: #007aff !important;
   background: #ffffff !important;
-  transition: all 300ms ease-in-out !important;
 }
 a .btn-onboarding-white {
   background-color: #ffffff !important;
-  padding: 20px !important;
-  border-radius: 10px !important;
-  border: 2px solid #007aff;
   color: #007aff !important;
   background: #ffffff !important;
-  transition: all 300ms ease-in-out !important;
 }
 a .btn-onboarding-white:hover {
   background-color: #007aff !important;
-  border: 2px solid #007aff;
   color: #ffffff !important;
   background: #007aff !important;
-  transition: all 300ms ease-in-out !important;
 }
 
 /** HOME **/
