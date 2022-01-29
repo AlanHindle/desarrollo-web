@@ -58,136 +58,6 @@ i {
   font-size: 2rem;
 }
 
-/** QUITO TODO EL SUBRRAYADO A LOS A **/
-.btn-primary, a .btn-onboarding-white, a .btn-onboarding {
-  padding: 20px !important;
-  border-radius: 10px !important;
-  border: 2px solid #007aff !important;
-  transition: all 300ms ease-in-out !important;
-}
-
-.btn-primary-hover, a .btn-onboarding-white:hover, a .btn-onboarding :hover {
-  border: 2px solid #007aff;
-  transition: all 300ms ease-in-out !important;
-}
-
-a {
-  text-decoration: none;
-  font-size: 1.3rem !important;
-}
-a .btn-onboarding {
-  background-color: #007aff !important;
-  color: #ffffff !important;
-  background: #007aff !important;
-}
-a .btn-onboarding :hover {
-  background-color: #ffffff !important;
-  color: #007aff !important;
-  background: #ffffff !important;
-}
-a .btn-onboarding-white {
-  background-color: #ffffff !important;
-  color: #007aff !important;
-  background: #ffffff !important;
-}
-a .btn-onboarding-white:hover {
-  background-color: #007aff !important;
-  color: #ffffff !important;
-  background: #007aff !important;
-}
-
-/** HOME **/
-.hero-home {
-  background-image: url("../../img/png/home/hero-home.png");
-  background-position: center center;
-  background-size: cover;
-  color: #ffffff;
-}
-
-/** HOME | LIBERTAD **/
-.hero-destino {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 0.5fr 1fr;
-  align-items: center;
-  background-image: url("../../img/png/home/ser-libre.png");
-  background-position: center center;
-  background-size: cover;
-  height: 100vh;
-}
-.hero-destino h2 {
-  background-color: #007aff;
-  color: #ffffff;
-  padding: 15px;
-  margin: 40px;
-  font-weight: normal !important;
-  border-radius: 10px;
-  text-align: center;
-  opacity: 0.8;
-  transition: all 300ms ease-in-out;
-  transform: scale(1);
-}
-.hero-destino h2:hover {
-  transition: all 300ms ease-in-out;
-  opacity: 1;
-  transform: scale(1.2);
-}
-
-/** PREGUNTAS FRECUENTES + BLOG + NUESTRO MANIFIESTO**/
-.section-hero-preguntas-frecuentes,
-.section-hero-nuestro-manifiesto,
-.section-hero-blog {
-  color: #ffffff;
-  background-color: #007aff;
-  background-position: top center;
-  background-size: cover;
-  height: 200px;
-}
-
-.section-hero-preguntas-frecuentes h1,
-.section-hero-blog h1 {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 4rem;
-  padding: 20px 0px;
-}
-
-/** TAMAÑOS DE LAS IMÁGENES **/
-.hero-home,
-.contenido-pedilo-ahora-img,
-.contenido-manifiesto-img,
-.contenido-contacto-img {
-  background-color: #007aff;
-  background-position: top center;
-  background-size: cover;
-  height: 600px;
-}
-
-.section-pedilo-ahora,
-.section-manifiesto,
-.section-faqs,
-.section-contacto {
-  align-items: center;
-}
-
-.contenido-pedilo-ahora-img {
-  background-image: url("../../assets/img/png/home/creditos-personales.png");
-}
-
-.contenido-manifiesto-img {
-  background-image: url("../../assets/img/png/home/manifiesto-welp.png");
-}
-
-.contenido-manifiesto-img {
-  background-image: url("../../assets/img/png/home/manifiesto-welp.png");
-}
-
-.contenido-contacto-img {
-  background-image: url("../../assets/img/png/contacto/1-contacto-persona.jpg");
-}
-
 /** HEADER GENERAL **/
 header {
   display: flex;
@@ -296,6 +166,27 @@ footer .social-media a i:hover {
 /** CREDITOS **/
 .section-creditos-rapidos {
   color: #ffffff;
+  background-color: #007aff;
+}
+.section-creditos-rapidos .contenido-creditos-rapidos-txt ul {
+  list-style: none;
+}
+.section-creditos-rapidos .contenido-creditos-rapidos-txt ul li {
+  margin: 10px 0px;
+}
+.section-creditos-rapidos .contenido-creditos-rapidos-txt ul li span {
+  font-size: 2.5rem;
+}
+
+.section-libertad {
+  text-align: right;
+  color: #007aff;
+}
+.section-libertad h1 {
+  font-size: 3rem;
+}
+.section-libertad h2 {
+  font-size: 2.4rem;
 }
 
 .contenido-manifiesto-txt h2 {
@@ -315,7 +206,7 @@ footer .social-media a i:hover {
 
 /** HOME | PREGUNTAS FRECUENTES **/
 .contenido-faqs-img {
-  background-image: url("../../../assets/img/png/home/preguntas-frecuentes.png");
+  background-image: url("../../assets/img/png/home/preguntas-frecuentes.png");
   background-position: left center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -480,6 +371,147 @@ aside .entradas-recientes p {
 
 .accordion-item {
   border: none;
+}
+
+/** QUITO TODO EL SUBRRAYADO A LOS A **/
+.btn-primary, a .btn-onboarding-white, a .btn-onboarding {
+  padding: 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #007aff !important;
+  transition: all 300ms ease-in-out !important;
+}
+
+.btn-primary-hover, a .btn-onboarding-white:hover, a .btn-onboarding :hover {
+  border: 2px solid #007aff;
+  transition: all 300ms ease-in-out !important;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem !important;
+}
+a .btn-onboarding {
+  background-color: #007aff !important;
+  color: #ffffff !important;
+  background: #007aff !important;
+}
+a .btn-onboarding :hover {
+  background-color: #ffffff !important;
+  color: #007aff !important;
+  background: #ffffff !important;
+}
+a .btn-onboarding-white {
+  background-color: #ffffff !important;
+  color: #007aff !important;
+  background: #ffffff !important;
+}
+a .btn-onboarding-white:hover {
+  background-color: #007aff !important;
+  color: #ffffff !important;
+  background: #007aff !important;
+}
+
+/** HOME **/
+.hero-home {
+  background-image: url("../../assets/img/png/home/hero-home.png");
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/** HOME | LIBERTAD **/
+.hero-destino {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 0.5fr 1fr;
+  align-items: center;
+  background-image: url("../../assets/img/png/home/ser-libre.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-destino h2 {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 15px;
+  margin: 40px;
+  font-weight: normal !important;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0.8;
+  transition: all 300ms ease-in-out;
+  transform: scale(1);
+}
+.hero-destino h2:hover {
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/** PREGUNTAS FRECUENTES + BLOG + NUESTRO MANIFIESTO**/
+.section-hero-preguntas-frecuentes,
+.section-hero-nuestro-manifiesto,
+.section-hero-blog {
+  color: #ffffff;
+  background-color: #007aff;
+  background-position: top center;
+  background-size: cover;
+  height: 200px;
+}
+
+.section-hero-preguntas-frecuentes h1,
+.section-hero-blog h1 {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding: 20px 0px;
+}
+
+/** TAMAÑOS DE LAS IMÁGENES **/
+.hero-home,
+.contenido-pedilo-ahora-img,
+.contenido-manifiesto-img,
+.contenido-creditos-rapidos-img,
+.contenido-libertad-img,
+.contenido-contacto-img {
+  background-color: #007aff;
+  background-position: top center;
+  background-size: cover;
+  height: 600px;
+}
+
+.section-pedilo-ahora,
+.section-creditos-rapidos,
+.section-manifiesto,
+.section-faqs,
+.section-contacto {
+  align-items: center;
+}
+
+.contenido-pedilo-ahora-img {
+  background-image: url("../../assets/img/png/home/creditos-personales.png");
+}
+
+.contenido-manifiesto-img {
+  background-image: url("../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-manifiesto-img {
+  background-image: url("../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-creditos-rapidos-img {
+  background-image: url("../../assets/img/png/creditos/creditos-rapidos-padre-e-hijo.png");
+}
+
+.contenido-libertad-img {
+  background-image: url("../../assets/img/png/creditos/mujer-con-libertad-financiera.png");
+}
+
+.contenido-contacto-img {
+  background-image: url("../../assets/img/png/contacto/1-contacto-persona.jpg");
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,6 +3,8 @@
 .hero-home,
 .contenido-pedilo-ahora-img,
 .contenido-manifiesto-img,
+.contenido-creditos-rapidos-img,
+.contenido-libertad-img,
 .contenido-contacto-img {
     background-color: $primarycolor;
     background-position: top center;
@@ -11,6 +13,7 @@
 }
 
 .section-pedilo-ahora,
+.section-creditos-rapidos,
 .section-manifiesto,
 .section-faqs,
 .section-contacto {
@@ -27,6 +30,14 @@
 
 .contenido-manifiesto-img {
     background-image: url("../../assets/img/png/home/manifiesto-welp.png");
+}
+
+.contenido-creditos-rapidos-img {
+    background-image: url("../../assets/img/png/creditos/creditos-rapidos-padre-e-hijo.png");
+}
+
+.contenido-libertad-img {
+    background-image: url("../../assets/img/png/creditos/mujer-con-libertad-financiera.png");
 }
 
 .contenido-contacto-img {

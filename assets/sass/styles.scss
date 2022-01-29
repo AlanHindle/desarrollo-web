@@ -1,9 +1,6 @@
 @import "./utilities/variables";
 @import "./base/reset";
 @import "./base/typo";
-@import "./components/buttons";
-@import "./components/heros";
-@import "./components/images";
 @import "./layout/navigation";
 @import "./layout/footer";
 @import "./views/home";
@@ -13,3 +10,6 @@
 @import "./views/blog";
 @import "./views/contact";
 @import "./vendors/bootstrap";
+@import "./components/buttons";
+@import "./components/heros";
+@import "./components/images";

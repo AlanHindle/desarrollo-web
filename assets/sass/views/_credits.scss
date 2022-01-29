@@ -2,4 +2,27 @@
 
 .section-creditos-rapidos {
     color: $white;
+    background-color: $primarycolor;
+    .contenido-creditos-rapidos-txt {
+        ul {
+            list-style: none;
+            li {
+                margin: 10px 0px;
+                span {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.section-libertad {
+    text-align: right;
+    color: $primarycolor;
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
 }
