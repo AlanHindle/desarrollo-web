@@ -62,7 +62,7 @@ i {
 .btn-primary, a .btn-onboarding-white, a .btn-onboarding {
   padding: 20px !important;
   border-radius: 10px !important;
-  border: 2px solid #007aff;
+  border: 2px solid #007aff !important;
   transition: all 300ms ease-in-out !important;
 }
 
@@ -98,7 +98,7 @@ a .btn-onboarding-white:hover {
 
 /** HOME **/
 .hero-home {
-  background-image: url("../../../assets/img/png/home/hero-home.png");
+  background-image: url("../../img/png/home/hero-home.png");
   background-position: center center;
   background-size: cover;
   color: #ffffff;
@@ -110,7 +110,7 @@ a .btn-onboarding-white:hover {
   grid-template-rows: 1;
   grid-template-columns: 0.5fr 1fr;
   align-items: center;
-  background-image: url("../../../assets/img/png/home/ser-libre.png");
+  background-image: url("../../img/png/home/ser-libre.png");
   background-position: center center;
   background-size: cover;
   height: 100vh;
