@@ -128,6 +128,9 @@ footer ul {
 footer ul li {
   padding: none !important;
 }
+footer ul li a i {
+  margin-right: 5px !important;
+}
 footer ul li a,
 footer .social-media a i {
   color: #ffffff;
