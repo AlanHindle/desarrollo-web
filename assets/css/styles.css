@@ -374,14 +374,14 @@ aside .entradas-recientes p {
 }
 
 /** QUITO TODO EL SUBRRAYADO A LOS A **/
-.btn-primary, a .btn-onboarding-white, a .btn-onboarding {
+.btn-primary, .btn-onboarding-white, .btn-onboarding {
   padding: 20px !important;
   border-radius: 10px !important;
   border: 2px solid #007aff !important;
   transition: all 300ms ease-in-out !important;
 }
 
-.btn-primary-hover, a .btn-onboarding-white:hover, a .btn-onboarding :hover {
+.btn-primary-hover, .btn-onboarding-white:hover, .btn-onboarding:hover {
   border: 2px solid #007aff;
   transition: all 300ms ease-in-out !important;
 }
@@ -390,22 +390,24 @@ a {
   text-decoration: none;
   font-size: 1.3rem !important;
 }
-a .btn-onboarding {
+
+.btn-onboarding {
   background-color: #007aff !important;
   color: #ffffff !important;
   background: #007aff !important;
 }
-a .btn-onboarding :hover {
+.btn-onboarding:hover {
   background-color: #ffffff !important;
   color: #007aff !important;
   background: #ffffff !important;
 }
-a .btn-onboarding-white {
+
+.btn-onboarding-white {
   background-color: #ffffff !important;
   color: #007aff !important;
   background: #ffffff !important;
 }
-a .btn-onboarding-white:hover {
+.btn-onboarding-white:hover {
   background-color: #007aff !important;
   color: #ffffff !important;
   background: #007aff !important;
