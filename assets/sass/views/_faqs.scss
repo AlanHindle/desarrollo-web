@@ -25,7 +25,7 @@
     a.btn-ver-preguntas-frecuentes {
         background-color: $primarycolor;
         padding: 20px;
-        border-radius: 10px;
+        @include border-radius;
         color: $white;
         font-size: 1.8rem;
         display: flex;

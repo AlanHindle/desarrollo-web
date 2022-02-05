@@ -5,7 +5,7 @@
     padding: 20px;
     padding-right: 50px;
     img {
-        border-radius: 10px;
+        @include border-radius;
     }
     .blog-categoria,
     .blog-leer-mas {
@@ -15,7 +15,7 @@
             font-size: 1.2rem !important;
             background-color: $primarycolor-20;
             padding: 5px 10px;
-            border-radius: 10px;
+            @include border-radius;
             transition: all 300ms ease-in-out;
             &:hover {
                 color: $white;
@@ -54,7 +54,7 @@ aside {
     }
     .entradas-recientes {
         display: block;
-        border-radius: 10px;
+        @include border-radius;
         color: $grey;
         background-color: rgba(0, 0, 0, 0.02);
         padding: 20px;

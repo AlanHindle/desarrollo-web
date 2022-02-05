@@ -9,6 +9,17 @@ $white: #ffffff;
 $black: #000000;
 $grey:#6c757d;
 $grey-white: #999999;
+
+/* MAP */
+
+$estilos-welp: (h1:4.5rem, h2:4rem, h3:1.7rem, p:1.3rem, ul:1.3rem, li:1.3rem, i:2rem);
+
+/*MIXIN*/
+
+@mixin border-radius {
+    border-radius: 10px !important;
+}
+
 .bg-welp {
     background-color: $primarycolor;
 }

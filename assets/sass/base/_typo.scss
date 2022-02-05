@@ -1,1 +1,8 @@
-$typoPrimary:'Rubik', sans-serif;
+$typoPrimary:'Rubik',
+sans-serif;
+@each $etiqueta,
+$rems in $estilos-welp {
+    #{$etiqueta} {
+        font-size: $rems !important;
+    }
+}
