@@ -1,0 +1,47 @@
+{
+  "name": "desarrollo-web",
+  "version": "1.0.0",
+  "description": "Welp Argentina",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanHindle/desarrollo-web.git"
+  },
+  "keywords": [
+    "Welp",
+    "home",
+    "Welp",
+    "Welp",
+    "Argentina",
+    "préstamos",
+    "créditos",
+    "prestamos",
+    "online",
+    "creditos",
+    "online",
+    "prestamos",
+    "online",
+    "en",
+    "el",
+    "acto",
+    "prestamos",
+    "personales",
+    "online",
+    "creditos",
+    "rapidos",
+    "online",
+    "solicitar",
+    "prestamo",
+    "préstamo",
+    "rápido"
+  ],
+  "author": "Alan Hindle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanHindle/desarrollo-web/issues"
+  },
+  "homepage": "https://github.com/AlanHindle/desarrollo-web#readme"
+}
