@@ -204,6 +204,21 @@ footer .social-media a i:hover {
   font-size: 2.4rem;
 }
 
+/** CREDITOS **/
+.section-error-404 {
+  color: #007aff;
+  background-color: #ffffff;
+}
+.section-error-404 .contenido-error-404-txt {
+  color: #007aff;
+}
+.section-error-404 .contenido-error-404-txt h1 {
+  font-size: 3rem;
+}
+.section-error-404 .contenido-error-404-txt h2 {
+  font-size: 2.4rem;
+}
+
 .contenido-manifiesto-txt h2 {
   margin-bottom: 40px;
 }
@@ -222,10 +237,10 @@ footer .social-media a i:hover {
 /** HOME | PREGUNTAS FRECUENTES **/
 .contenido-faqs-img {
   background-image: url("../../assets/img/png/home/preguntas-frecuentes.png");
-  background-position: left center;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 700px;
 }
 .contenido-faqs-img img {
   opacity: 0;
@@ -499,11 +514,19 @@ a {
   height: 600px;
 }
 
+.contenido-error-404-img {
+  background-color: #ffffff;
+  background-position: center center;
+  background-size: contain;
+  height: 600px;
+}
+
 .section-pedilo-ahora,
 .section-creditos-rapidos,
 .section-manifiesto,
 .section-faqs,
-.section-contacto {
+.section-contacto,
+.section-error-404 {
   align-items: center;
 }
 
@@ -529,6 +552,11 @@ a {
 
 .contenido-contacto-img {
   background-image: url("../../assets/img/png/contacto/1-contacto-persona.jpg");
+}
+
+.contenido-error-404-img {
+  background-image: url("../../assets/img/png/error-404.png");
+  background-repeat: none !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

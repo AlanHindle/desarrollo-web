@@ -12,11 +12,19 @@
     height: 600px;
 }
 
+.contenido-error-404-img {
+    background-color: $white;
+    background-position: center center;
+    background-size: contain;
+    height: 600px;
+}
+
 .section-pedilo-ahora,
 .section-creditos-rapidos,
 .section-manifiesto,
 .section-faqs,
-.section-contacto {
+.section-contacto,
+.section-error-404 {
     align-items: center;
 }
 
@@ -42,4 +50,9 @@
 
 .contenido-contacto-img {
     background-image: url("../../assets/img/png/contacto/1-contacto-persona.jpg");
+}
+
+.contenido-error-404-img {
+    background-image: url("../../assets/img/png/error-404.png");
+    background-repeat: none !important;
 }

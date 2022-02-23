@@ -1,0 +1,15 @@
+/** CREDITOS **/
+
+.section-error-404 {
+    color: $primarycolor;
+    background-color: $white;
+    .contenido-error-404-txt {
+        color: $primarycolor;
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+        }
+    }
+}
