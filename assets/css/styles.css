@@ -519,6 +519,7 @@ a {
   background-position: center center;
   background-size: contain;
   height: 600px;
+  background-repeat: no-repeat !important;
 }
 
 .section-pedilo-ahora,
@@ -556,7 +557,6 @@ a {
 
 .contenido-error-404-img {
   background-image: url("../../assets/img/png/error-404.png");
-  background-repeat: no-repeat !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
