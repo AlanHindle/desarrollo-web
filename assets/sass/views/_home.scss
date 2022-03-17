@@ -1,3 +1,36 @@
+/** SIMULADOR DE PRESTAMO **/
+
+.section-simulador {
+    background-color: $white !important;
+    border-radius: 15px;
+    font-family: $typoPrimary;
+    p {
+        color: $grey;
+        font-size: 1.4rem!important;
+    }
+    .simulador-left {
+        font-size: 2rem !important;
+        text-align: left;
+    }
+    .simulador-right {
+        font-size: 2rem !important;
+        text-align: right;
+    }
+    .tasa-cero {
+        font-size: 2rem !important;
+        color: $primarycolor;
+    }
+    .simulador-prestamo-resultado {
+        background-color: $grey-white;
+        padding: 0 !important;
+        margin: 0 !important;
+        .txt-secundary {
+            font-size: 1.4rem!important;
+        }
+    }
+}
+
+
 /** HOME | CREDITOS PERSONALES **/
 
 .contenido-pedilo-ahora-txt h2 {

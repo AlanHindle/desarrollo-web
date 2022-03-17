@@ -8,7 +8,7 @@ sans-serif;
 $white: #ffffff;
 $black: #000000;
 $grey:#6c757d;
-$grey-white: #999999;
+$grey-white: #f4f4f4;
 
 /* MAP */
 
@@ -26,4 +26,8 @@ $estilos-welp: (h1:4.5rem, h2:4rem, h3:1.7rem, p:1.3rem, ul:1.3rem, li:1.3rem, i
 
 .txt-welp {
     color: $primarycolor;
+}
+
+.txt-secundary {
+    color: $grey;
 }

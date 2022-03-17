@@ -10,6 +10,10 @@
   color: #007aff;
 }
 
+.txt-secundary {
+  color: #6c757d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +153,37 @@ footer .social-media a i:hover {
   transition: all 300ms ease;
 }
 
+/** SIMULADOR DE PRESTAMO **/
+.section-simulador {
+  background-color: #ffffff !important;
+  border-radius: 15px;
+  font-family: "Rubik", sans-serif;
+}
+.section-simulador p {
+  color: #6c757d;
+  font-size: 1.4rem !important;
+}
+.section-simulador .simulador-left {
+  font-size: 2rem !important;
+  text-align: left;
+}
+.section-simulador .simulador-right {
+  font-size: 2rem !important;
+  text-align: right;
+}
+.section-simulador .tasa-cero {
+  font-size: 2rem !important;
+  color: #007aff;
+}
+.section-simulador .simulador-prestamo-resultado {
+  background-color: #f4f4f4;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.section-simulador .simulador-prestamo-resultado .txt-secundary {
+  font-size: 1.4rem !important;
+}
+
 /** HOME | CREDITOS PERSONALES **/
 .contenido-pedilo-ahora-txt h2 {
   color: #007aff;
@@ -285,7 +320,7 @@ footer .social-media a i:hover {
 
 .respuesta-1,
 .respuesta-2 {
-  color: #999999;
+  color: #f4f4f4;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -327,7 +362,7 @@ footer .social-media a i:hover {
   margin-bottom: 15px;
 }
 .contenido-blog-nota .blog-footer {
-  color: #999999;
+  color: #f4f4f4;
 }
 .contenido-blog-nota .blog-footer p,
 .contenido-blog-nota .blog-footer a {

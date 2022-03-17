@@ -69,21 +69,90 @@
             <div class="container h-100">
                 <div class="row h-100 justify-content-center align-items-center">
                     <div class="col-12">
-                        <div class="row">
-                            <div class="col-md-6 p-lg-5 my-5">
+                        <div class="row justify-content-between">
+                            <div class="col-md-5 p-lg-5 my-5">
                                 <h1 class="fw-bold">
                                     Sos el protagonista de tu historia.
                                 </h1>
                                 <p class="fw-normal"> <b>Welp</b> es un <b>crédito online</b> que amplía tus posibilidades con <b>soluciones</b> simples, ágiles y al alcance de tu mano.</p>
                             </div>
-                            <div class="col-md-4 p-lg-5 my-5">
-                                <label for="customRange3" class="form-label">Example range</label>
-                                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                            <div class="col-md-4 p-5 my-5 section-simulador">
+                                <div class="row align-items-center justify-content-center">
+                                    <div class="col-6 simulador-left">
+                                        <p class="fw-bold">
+                                            ¿Cuáto necesitas?
+                                        </p>
+                                    </div>
+                                    <div class="col-6 simulador-right">
+                                        <output name="SimuladorMonto" id="SimuladorOutputId" class="txt-welp">100 €</output>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="range" name="SimuladorMonto" id="SimuladorMontoId" style="width: 100%;" value="0" min="100" max="400" oninput="SimuladorOutputId.value = SimuladorMontoId.value + ' €'">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center my-5">
+                                    <div class="col-6 simulador-left">
+                                        <p class="fw-bold">
+                                            ¿Cuándo prefieres devolverlo?
+                                        </p>
+                                    </div>
+                                    <div class="col-6 simulador-right">
+                                        <output name="SimuladorDias" id="SimuladorDiasOutputId" class="txt-welp">5 d</output>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="range" name="SimuladorDias" id="SimuladorDiasId" style="width: 100%;" value="5" min="5" max="30" oninput="SimuladorDiasOutputId.value = SimuladorDiasId.value + ' d'">
+                                    </div>
+                                </div>
+                                <div class="row align-items-center justify-content-center simulador-prestamo-resultado">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col-6 simulador-left">
+                                                <p class="tasa-cero">
+                                                    Intereses
+                                                </p>
+                                            </div>
+                                            <div class="col-6 simulador-right">
+                                                <p class="tasa-cero">0 €</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 simulador-left">
+                                                <p>
+                                                    Importe del prestamo
+                                                </p>
+                                            </div>
+                                            <div class="col-6 simulador-right">
+                                                <output name="SimuladorMonto" id="SimuladorOutputId" class="txt-secundary">100 €</output>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 simulador-left">
+                                                <p>
+                                                    Fecha de devolución
+                                                </p>
+                                            </div>
+                                            <div class="col-6 simulador-right">
+                                                <output name="SimuladorMonto" id="SimuladorOutputId" class="txt-secundary">XXXXX</output>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-6 simulador-left">
+                                                <p>
+                                                    Total a devolver
+                                                </p>
+                                            </div>
+                                            <div class="col-6 simulador-right">
+                                                <output name="SimuladorMonto" id="SimuladorOutputId" class="txt-secundary">XXXXX</output>
+                                            </div>
+                                        </div>
 
-                                <h1 class="fw-bold">
-                                    Sos el protagonista de tu historia.
-                                </h1>
-                                <p class="fw-normal"> <b>Welp</b> es un <b>crédito online</b> que amplía tus posibilidades con <b>soluciones</b> simples, ágiles y al alcance de tu mano.</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="row mt-5">
+                                    <a class="btn-onboarding" href="https://app.welp.com/?source=site_wp&medium=site_wp&adgroup=wp&utm_source=site_wp&utm_medium=site_wp&utm_campaing=site_wp">Pedilo ahora</a>
+                                </div>
                             </div>
                         </div>
                     </div>
