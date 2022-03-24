@@ -6,7 +6,7 @@ class Prestamo {
 
     }
     cotizarPrestamo() {
-        debugger
+        //debugger
 
         let interesDiarios = (this.interesDelPrestamo * this.solicitudDePrestamo) / 100;
         let totalDeIntereses = interesDiarios * this.diaDeDevolucion;
