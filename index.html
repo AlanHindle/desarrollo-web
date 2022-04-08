@@ -19,10 +19,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" type="image/png" href="./assets/img/ico/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./assets/img/ico/favicon-16x16.png" sizes="16x16" />
-    <!-- Simulador de crédito -->
-    <script src="./assets/js/simulador-prestamo/variables.js"></script>
-    <script src="./assets/js/simulador-prestamo/objetoCotizador.js"></script>
-    <script src="./assets/js/simulador-prestamo/app.js"></script>
+
 </head>
 
 <body>
@@ -80,14 +77,14 @@
                                 <div class="row align-items-center justify-content-center">
                                     <div class="col-6 simulador-left">
                                         <p class="fw-bold">
-                                            ¿Cuáto necesitas?
+                                            ¿Cuánto necesitas?
                                         </p>
                                     </div>
                                     <div class="col-6 simulador-right">
                                         <output name="SimuladorMonto" id="SimuladorOutputId" class="txt-welp">100 €</output>
                                     </div>
                                     <div class="col-12">
-                                        <input type="range" name="SimuladorMonto" id="SimuladorMontoId" style="width: 100%;" value="0" min="100" max="400" oninput="SimuladorOutputId.value = SimuladorMontoId.value + ' €'">
+                                        <input type="range" name="SimuladorRangeMonto" id="SimuladorMontoId" style="width: 100%;" value="0" min="100" max="400">
                                     </div>
                                 </div>
                                 <div class="row align-items-center justify-content-center my-5">
@@ -97,10 +94,10 @@
                                         </p>
                                     </div>
                                     <div class="col-6 simulador-right">
-                                        <output name="SimuladorDias" id="SimuladorDiasOutputId" class="txt-welp">5 d</output>
+                                        <output name="SimuladorDias" class="txt-welp">5 d</output>
                                     </div>
                                     <div class="col-12">
-                                        <input type="range" name="SimuladorDias" id="SimuladorDiasId" style="width: 100%;" value="5" min="5" max="30" oninput="SimuladorDiasOutputId.value = SimuladorDiasId.value + ' d'">
+                                        <input type="range" name="SimuladorRangeDias" style="width: 100%;" value="5" min="5" max="30" oninput="SimuladorDiasOutputId.value = SimuladorDiasId.value + ' d'">
                                     </div>
                                 </div>
                                 <div class="row align-items-center justify-content-center simulador-prestamo-resultado">
@@ -112,7 +109,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <p id="pInteresesId" class="tasa-cero">0 €</p>
+                                                <p id="pInteresesId" name="tasaCeroRange" class="tasa-cero">0 €</p>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -122,7 +119,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorMonto" id="SimuladorOutputImpPrestamoId" class="txt-secundary">100 €</output>
+                                                <output name="SimuladorMonto" class="txt-secundary">100 €</output>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -132,7 +129,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorMonto" id="SimuladorOutputFechaDevId" class="txt-secundary">XXXXX</output>
+                                                <output name="SimuladorTotalDias" class="txt-secundary">XXasdasdXXX</output>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
@@ -142,7 +139,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorMonto" id="SimuladorOutputTotalDevId" class="txt-secundary">XXXXX</output>
+                                                <output name="SimuladorTotalMonto" class="txt-secundary">XXXXX</output>
                                             </div>
                                         </div>
 
@@ -393,6 +390,10 @@
     <!-- BS5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="./assets/js/bootstrap-5/bootstrap.min.js "></script>
+    <!-- Simulador de crédito -->
+    <script src="./assets/js/simulador-prestamo/variables.js"></script>
+    <script src="./assets/js/simulador-prestamo/objetoCotizador.js"></script>
+    <script src="./assets/js/simulador-prestamo/app.js"></script>
 
 </body>
 

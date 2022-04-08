@@ -1,7 +1,42 @@
 // Esta linea dice que cuando cargue la pagina por complete (el html) entonces ejecutara la funcion "load()"
 window.onload = load;
 
-function load(){
+const inputPrestamo = document.getElementById('SimuladorMontoId');
+const simuladorOuput = document.getElementById('SimuladorOutputId')
+const lblSimuladorOutput = document.getElementById('SimuladorOutputImpPrestamoId')
+
+const simuladorMonto = document.getElementsByName('SimuladorMonto');
+
+
+
+//console.log(formatDate(Date.now, 'dd|mm|yyyy'));
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed);
+console.log(formatDate(today))
+
+console.log("14 dias dsp" + addDate(today))
+    //SimuladorMonto
+    //SimuladorRangeMonto
+
+//SimuladorDias
+//SimuladorRangeDias
+
+//tasaCeroRange
+
+//SimuladorTotalDias
+
+//SimuladorTotalMonto
+
+inputPrestamo.oninput = (evt) => {
+
+
+    simuladorMonto.forEach(x => x.innerText = evt.target.value + " €")
+        // alert("Se ejecuto oninput");
+        //console.log(evt.target.value + " €");
+}
+
+
+function load() {
     // Busco el boton con id="btn_onboarding" usando document.getElementById("btn_onboarding") y le agrego un evento "click"
     // Entonces cuando se haga click sobre el boton indicado, llamara a la funcion "cotizarNuevoPrestamo"
     document.getElementById("btn_onboarding").addEventListener("click", cotizarNuevoPrestamo);
