@@ -10,6 +10,8 @@ const simuladorMonto = document.getElementsByName('SimuladorMonto');
 const lblFechaDevolucion = document.getElementById('simuladorTotalDias');
 const lblSimuladorTotalMonto = document.getElementById('simuladorTotalMonto');
 const inputSimuladorMonto = document.getElementById('SimuladorMontoId');
+const flexSwitchCheckChecked = document.getElementById('flexSwitchCheckChecked');
+const apiOficial = 'https://api-dolar-argentina.herokuapp.com';
 
 //Pruebas con fechas
 //console.log(formatDate(Date.now, 'dd|mm|yyyy'));
@@ -77,6 +79,20 @@ inputPrestamo.oninput = (evt) => {
     //console.log(evt.target.value + " €");
 }
 
+
+flexSwitchCheckChecked.onchange = () => {
+    //alert("Cambio desde JS");
+    let header = new Headers();
+    header.append('Access-Control-Allow-Origin', 'https://alanhindle.github.io/desarrollo-web/');
+    header.append('Access-Control-Allow-Credentials', 'true');
+
+    let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue", {
+        method: 'POST',
+        headers: header
+    }).then(x => console.log(x.json()));
+    /* let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue").then(x => console.log(x.json));
+    console.log(dolarDesdeApi);*/
+}
 
 function load() {
     // Busco el boton con id="btn_onboarding" usando document.getElementById("btn_onboarding") y le agrego un evento "click"
