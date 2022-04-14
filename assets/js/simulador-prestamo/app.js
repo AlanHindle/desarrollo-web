@@ -83,21 +83,45 @@ inputPrestamo.oninput = (evt) => {
 flexSwitchCheckChecked.onchange = () => {
     //alert("Cambio desde JS");
     let header = new Headers();
-    header.append('Access-Control-Allow-Origin', 'https://alanhindle.github.io/desarrollo-web/');
+    header.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5503/');
     header.append('Access-Control-Allow-Credentials', 'true');
+    header.append('Content-type', 'application/json');
 
-    let dolarDesdeApi = fetch("https://api-dolar-argentina.herokuapp.com/api/dolarblue", {
-        method: 'POST',
+    let dolarDesdeApi = fetch("https://justcors.com/tl_068356f/https://api-dolar-argentina.herokuapp.com/api/dolarblue", {
+        method: 'GET',
         headers: header,
         mode: 'no-cors'
-    }).then(x => console.log(x.json()));
+    }).then(response => console.log(response.json()));
     /* let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue").then(x => console.log(x.json));
     console.log(dolarDesdeApi);*/
 }
 
-function load() {
+
+
+/* function sendRequest(url, method, body) {
+    const options = {
+        method: method,
+        headers: new Headers({ 'content-type': 'application/json' }),
+        mode: 'no-cors'
+    };
+
+    if (body) {
+        options.body = JSON.stringify(body);
+    }
+    return fetch(url, options);
+
+} */
+
+async function load() {
     // Busco el boton con id="btn_onboarding" usando document.getElementById("btn_onboarding") y le agrego un evento "click"
     // Entonces cuando se haga click sobre el boton indicado, llamara a la funcion "cotizarNuevoPrestamo"
+
+    let prueba = await fetch('./assets/js/dolar.json');
+    let objCotizacion = await prueba.json();
+
+    console.log(objCotizacion);
+    //console.log(prueba.then((res) => res.json()).then(data => console.log(data)));
+
     document.getElementById("btn_onboarding").addEventListener("click", cotizarNuevoPrestamo);
 
     let fechaInicioPrestamo = addDate(5);
