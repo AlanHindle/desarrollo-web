@@ -11,7 +11,7 @@ const lblFechaDevolucion = document.getElementById('simuladorTotalDias');
 const lblSimuladorTotalMonto = document.getElementById('simuladorTotalMonto');
 const inputSimuladorMonto = document.getElementById('SimuladorMontoId');
 const flexSwitchCheckChecked = document.getElementById('flexSwitchCheckChecked');
-const apiOficial = 'https://api-dolar-argentina.herokuapp.com';
+//const apiOficial = 'https://api-dolar-argentina.herokuapp.com';
 
 //Pruebas con fechas
 //console.log(formatDate(Date.now, 'dd|mm|yyyy'));
@@ -86,9 +86,10 @@ flexSwitchCheckChecked.onchange = () => {
     header.append('Access-Control-Allow-Origin', 'https://alanhindle.github.io/desarrollo-web/');
     header.append('Access-Control-Allow-Credentials', 'true');
 
-    let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue", {
+    let dolarDesdeApi = fetch("https://api-dolar-argentina.herokuapp.com/api/dolarblue", {
         method: 'POST',
-        headers: header
+        headers: header,
+        mode: 'no-cors'
     }).then(x => console.log(x.json()));
     /* let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue").then(x => console.log(x.json));
     console.log(dolarDesdeApi);*/
