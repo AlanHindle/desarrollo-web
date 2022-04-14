@@ -94,10 +94,11 @@
                                         </p>
                                     </div>
                                     <div class="col-6 simulador-right">
-                                        <output name="SimuladorDias" class="txt-welp">5 d</output>
+                                        <output name="SimuladorDias" id="simuladorDias" class="txt-welp">5 d</output>
                                     </div>
                                     <div class="col-12">
-                                        <input type="range" name="SimuladorRangeDias" style="width: 100%;" value="5" min="5" max="30" oninput="SimuladorDiasOutputId.value = SimuladorDiasId.value + ' d'">
+                                        <input type="range" name="SimuladorRangeDias" id="simuladorRangeDias" style="width: 100%;" value="5" min="5" max="30">
+                                        <!-- oninput="SimuladorDiasOutputId.value = SimuladorDiasId.value + ' d'" -->
                                     </div>
                                 </div>
                                 <div class="row align-items-center justify-content-center simulador-prestamo-resultado">
@@ -119,7 +120,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorMonto" class="txt-secundary">100 €</output>
+                                                <output name="SimuladorMonto" id="simuladorMonto" class="txt-secundary">100 €</output>
                                             </div>
                                         </div>
                                         <div class="row">
@@ -129,7 +130,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorTotalDias" class="txt-secundary">XXasdasdXXX</output>
+                                                <output name="SimuladorTotalDias" id="simuladorTotalDias" class="txt-secundary">XXasdasdXXX</output>
                                             </div>
                                         </div>
                                         <div class="row mt-5">
@@ -139,7 +140,7 @@
                                                 </p>
                                             </div>
                                             <div class="col-6 simulador-right">
-                                                <output name="SimuladorTotalMonto" class="txt-secundary">XXXXX</output>
+                                                <output name="SimuladorTotalMonto" id="simuladorTotalMonto" class="txt-secundary">XXXXX</output>
                                             </div>
                                         </div>
 
@@ -390,10 +391,14 @@
     <!-- BS5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="./assets/js/bootstrap-5/bootstrap.min.js "></script>
+    <!--Librería JS Fechas-->
+    <script src="./assets/js/moments-libreria/moments.js"></script>
+
     <!-- Simulador de crédito -->
     <script src="./assets/js/simulador-prestamo/variables.js"></script>
     <script src="./assets/js/simulador-prestamo/objetoCotizador.js"></script>
     <script src="./assets/js/simulador-prestamo/app.js"></script>
+
 
 </body>
 

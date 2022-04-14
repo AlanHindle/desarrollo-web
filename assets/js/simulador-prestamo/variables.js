@@ -1,6 +1,6 @@
 let solicitudDePrestamo = 0
 let diaDeDevolucion = 0
-const interesDelPrestamo = 30
+const interesDelPrestamo = 40
 
 /* function formatDate(date, format) {
     const map = {
@@ -13,18 +13,26 @@ const interesDelPrestamo = 30
 } */
 
 
-function formatDate(date) {
+/* function formatDate() {
+    return moment(new Date()).format("DD/MM/YYYY");
+} */
+
+function addDate(cantidadDias) {
+    return moment().add(cantidadDias, 'days').format("DD/MM/YYYY");
+}
+
+/* function formatDate(date) {
 
     return `${ date.getDate()}/${ date.getMonth() + 1 }/${date.getFullYear()}`
 
-}
+} */
 
-function addDate(date) {
+/* function addDate(date, cantidadDias) {
 
-    let addDays = date.setDate(date.getDate() + 14);
+    let addDays = date.setDate(date.getDate() + cantidadDias);
 
     return formatDate(new Date(addDays));
 
     //return `${date.getMonth() + 1}/${ date.getDate()}/${date.getFullYear()}`
 
-}
+} */

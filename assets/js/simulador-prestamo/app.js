@@ -4,19 +4,24 @@ window.onload = load;
 const inputPrestamo = document.getElementById('SimuladorMontoId');
 const simuladorOuput = document.getElementById('SimuladorOutputId')
 const lblSimuladorOutput = document.getElementById('SimuladorOutputImpPrestamoId')
-
+const lblDias = document.getElementById('simuladorDias');
+const inputDias = document.getElementById('simuladorRangeDias');
 const simuladorMonto = document.getElementsByName('SimuladorMonto');
+const lblFechaDevolucion = document.getElementById('simuladorTotalDias');
+const lblSimuladorTotalMonto = document.getElementById('simuladorTotalMonto');
+const inputSimuladorMonto = document.getElementById('SimuladorMontoId');
 
-
-
+//Pruebas con fechas
 //console.log(formatDate(Date.now, 'dd|mm|yyyy'));
-const timeElapsed = Date.now();
-const today = new Date(timeElapsed);
-console.log(formatDate(today))
+//const timeElapsed = Date.now();
+//const today = new Date(timeElapsed);
+//console.log(formatDate(today))
 
-console.log("14 dias dsp" + addDate(today))
-    //SimuladorMonto
-    //SimuladorRangeMonto
+//console.log("14 dias dsp" + addDate(today))
+
+
+//SimuladorMonto
+//SimuladorRangeMonto
 
 //SimuladorDias
 //SimuladorRangeDias
@@ -27,12 +32,49 @@ console.log("14 dias dsp" + addDate(today))
 
 //SimuladorTotalMonto
 
+//lblDias.addEventListener("oninput", (evt) => {});
+
+// Librería https://profile.es/blog/librerias-javascript/
+// AJAX -> API Dolares ??? API KEY SECRET KEY
+
+
+
+function actualizarPrestamo() {
+
+
+    let interesDiarios = (interesDelPrestamo * parseInt(inputSimuladorMonto.value) / 100);
+
+    let totalDeIntereses = interesDiarios * parseInt(lblDias.innerText);
+    let resultadoPrestamo = parseInt(inputSimuladorMonto.value) + totalDeIntereses;
+    //return parseInt(resultado)
+    lblSimuladorTotalMonto.innerText = resultadoPrestamo.toFixed() + " €";
+
+
+
+}
+
+
+inputDias.oninput = (evt) => {
+
+    //console.log(evt);
+    //const timeElapsed = Date.now();
+    //const today = new Date(timeElapsed);
+    //console.log(today);
+    lblDias.innerText = evt.target.value + " d";
+    let cantidadDias = parseInt(evt.target.value); //este value va ser un string
+    let fecha = addDate(cantidadDias);
+    lblFechaDevolucion.innerText = fecha;
+    actualizarPrestamo();
+}
+
 inputPrestamo.oninput = (evt) => {
 
 
-    simuladorMonto.forEach(x => x.innerText = evt.target.value + " €")
-        // alert("Se ejecuto oninput");
-        //console.log(evt.target.value + " €");
+    simuladorMonto.forEach(x => x.innerText = evt.target.value + " €");
+    actualizarPrestamo();
+
+    // alert("Se ejecuto oninput");
+    //console.log(evt.target.value + " €");
 }
 
 
@@ -40,6 +82,10 @@ function load() {
     // Busco el boton con id="btn_onboarding" usando document.getElementById("btn_onboarding") y le agrego un evento "click"
     // Entonces cuando se haga click sobre el boton indicado, llamara a la funcion "cotizarNuevoPrestamo"
     document.getElementById("btn_onboarding").addEventListener("click", cotizarNuevoPrestamo);
+
+    let fechaInicioPrestamo = addDate(5);
+    lblFechaDevolucion.innerText = fechaInicioPrestamo;
+    lblSimuladorTotalMonto.innerText = inputSimuladorMonto.value + " €";
 }
 
 function cotizarNuevoPrestamo() {

@@ -13,4 +13,7 @@ class Prestamo {
         let resultado = this.solicitudDePrestamo + totalDeIntereses;
         return parseInt(resultado)
     }
+
+
+
 }
