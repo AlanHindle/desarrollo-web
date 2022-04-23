@@ -11,6 +11,9 @@ const lblFechaDevolucion = document.getElementById('simuladorTotalDias');
 const lblSimuladorTotalMonto = document.getElementById('simuladorTotalMonto');
 const inputSimuladorMonto = document.getElementById('SimuladorMontoId');
 const flexSwitchCheckChecked = document.getElementById('flexSwitchCheckChecked');
+const dolarhoy = document.getElementById('dolarhoy');
+let objCotizacion = {};
+
 //const apiOficial = 'https://api-dolar-argentina.herokuapp.com';
 
 //Pruebas con fechas
@@ -80,18 +83,38 @@ inputPrestamo.oninput = (evt) => {
 }
 
 
-flexSwitchCheckChecked.onchange = () => {
-    //alert("Cambio desde JS");
-    let header = new Headers();
-    header.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5503/');
-    header.append('Access-Control-Allow-Credentials', 'true');
-    header.append('Content-type', 'application/json');
+flexSwitchCheckChecked.onchange = (evt) => {
 
-    let dolarDesdeApi = fetch("https://justcors.com/tl_068356f/https://api-dolar-argentina.herokuapp.com/api/dolarblue", {
-        method: 'GET',
-        headers: header,
-        mode: 'no-cors'
-    }).then(response => console.log(response.json()));
+    if (flexSwitchCheckChecked.checked) {
+        // console.log("esta activo")
+
+        const txtdolar = 'Esta es la cotización del dolar hoy'
+
+        dolarhoy.innerHTML = "";
+        let element = document.createElement('p');
+        element.innerText = txtdolar + ' ' + objCotizacion.blueventa;
+        dolarhoy.appendChild(element);
+
+        lblSimuladorTotalMonto.innerText = (parseInt(lblSimuladorTotalMonto.value) / parseInt(objCotizacion.blueventa)).toFixed() + " U$D";
+
+    } else {
+        // console.log("esta desactivo")
+        lblSimuladorTotalMonto.innerText = inputSimuladorMonto.value + " ARS";
+        dolarhoy.innerHTML = "";
+    }
+
+    //alert("Cambio desde JS");
+    /* let header = new Headers();
+     header.append('Access-Control-Allow-Origin', 'http://127.0.0.1:5503/');
+     header.append('Access-Control-Allow-Credentials', 'true');
+     header.append('Content-type', 'application/json');
+
+     let dolarDesdeApi = fetch("https://justcors.com/tl_068356f/https://api-dolar-argentina.herokuapp.com/api/dolarblue", {
+         method: 'GET',
+         headers: header,
+         mode: 'no-cors'
+     }).then(response => console.log(response.json()));
+     */
     /* let dolarDesdeApi = fetch(apiOficial + "/api/dolarblue").then(x => console.log(x.json));
     console.log(dolarDesdeApi);*/
 }
@@ -117,9 +140,17 @@ async function load() {
     // Entonces cuando se haga click sobre el boton indicado, llamara a la funcion "cotizarNuevoPrestamo"
 
     let prueba = await fetch('./assets/js/dolar.json');
-    let objCotizacion = await prueba.json();
+    objCotizacion = await prueba.json();
 
     console.log(objCotizacion);
+
+    /* const txtdolar = 'Esta es la cotización del dolar hoy'
+
+    let element = document.createElement('p');
+    element.innerText = txtdolar + ' ' + objCotizacion.blueventa;
+    dolarhoy.appendChild(element);
+*/
+
     //console.log(prueba.then((res) => res.json()).then(data => console.log(data)));
 
     document.getElementById("btn_onboarding").addEventListener("click", cotizarNuevoPrestamo);
@@ -127,6 +158,7 @@ async function load() {
     let fechaInicioPrestamo = addDate(5);
     lblFechaDevolucion.innerText = fechaInicioPrestamo;
     lblSimuladorTotalMonto.innerText = inputSimuladorMonto.value + " €";
+
 }
 
 function cotizarNuevoPrestamo() {

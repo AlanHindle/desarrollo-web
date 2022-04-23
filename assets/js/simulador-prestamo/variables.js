@@ -1,6 +1,6 @@
 let solicitudDePrestamo = 0
 let diaDeDevolucion = 0
-const interesDelPrestamo = 40
+const interesDelPrestamo = 20
 
 /* function formatDate(date, format) {
     const map = {
